@@ -1,0 +1,209 @@
+function drawbackground() {
+  penColor("lightBlue");
+  penDown();
+  dot(1000);
+  penUp();
+}
+function turnaround() {
+  turnLeft(180);
+}
+function drawsnow() {
+  for (var i = 0; i < 350; i++) {
+    penDown();
+    moveBackward(200);
+    penColor("white");
+    moveTo(randomNumber(1, 314), randomNumber(310, 448));
+    dot(20);
+    penUp();
+  }
+}
+function drawtree1() {
+  moveTo(30, 340);
+  penWidth(10);
+  penRGB(40, 40, 40, 1);
+  penDown();
+  moveForward(100);
+  turnaround();
+  penColor("green");
+  turnRight(45);
+  moveForward(25);
+  turnaround();
+  turnRight(45);
+  moveForward(25);
+  penUp();
+  moveTo(30, 240);
+  penDown();
+  turnRight(45);
+  moveForward(25);
+  moveTo(30, 240);
+  turnTo(180);
+  moveForward(15);
+  turnRight(45);
+  moveForward(40);
+  turnTo(90);
+  moveForward(50);
+  turnTo(-35);
+  moveForward(25);
+  moveTo(30, 240);
+  turnTo(180);
+  moveForward(35);
+  turnTo(225);
+  moveForward(50);
+  turnTo(90);
+  moveForward(65);
+  turnTo(-45);
+  moveForward(45);
+  turnTo(0);
+  moveForward(5);
+  dot(15);
+  moveBackward(25);
+  dot(19);
+  penUp();
+}
+function drawtree2() {
+  moveTo(120, 340);
+  penWidth(10);
+  penRGB(40, 40, 40, 1);
+  penDown();
+  moveForward(100);
+  turnaround();
+  penColor("green");
+  turnTo(223);
+  moveForward(25);
+  penUp();
+  moveTo(120, 240);
+  penDown();
+  turnTo(135);
+  moveForward(25);
+  moveTo(120, 240);
+  turnTo(180);
+  moveForward(15);
+  turnRight(45);
+  moveForward(40);
+  turnTo(90);
+  moveForward(50);
+  turnTo(-35);
+  moveForward(25);
+  moveTo(120, 240);
+  turnTo(180);
+  moveForward(35);
+  turnTo(225);
+  moveForward(50);
+  turnTo(90);
+  moveForward(65);
+  turnTo(-45);
+  moveForward(45);
+  turnTo(0);
+  moveForward(5);
+  dot(15);
+  moveBackward(25);
+  dot(19);
+  penUp();
+}
+function drawtree3() {
+  moveTo(200, 340);
+  penWidth(10);
+  penRGB(40, 40, 40, 1);
+  penDown();
+  moveForward(100);
+  turnaround();
+  penColor("green");
+  turnTo(223);
+  moveForward(25);
+  penUp();
+  moveTo(200, 240);
+  penDown();
+  turnTo(135);
+  moveForward(25);
+  moveTo(200, 240);
+  turnTo(180);
+  moveForward(15);
+  turnRight(45);
+  moveForward(40);
+  turnTo(90);
+  moveForward(50);
+  turnTo(-35);
+  moveForward(25);
+  moveTo(200, 240);
+  turnTo(180);
+  moveForward(35);
+  turnTo(225);
+  moveForward(50);
+  turnTo(90);
+  moveForward(65);
+  turnTo(-45);
+  moveForward(45);
+  turnTo(0);
+  moveForward(5);
+  dot(15);
+  moveBackward(25);
+  dot(19);
+  penUp();
+}
+function drawtree4() {
+  moveTo(270, 340);
+  penWidth(10);
+  penRGB(40, 40, 40, 1);
+  penDown();
+  moveForward(100);
+  turnaround();
+  penColor("green");
+  turnTo(223);
+  moveForward(25);
+  penUp();
+  moveTo(270, 240);
+  penDown();
+  turnTo(135);
+  moveForward(25);
+  moveTo(270, 240);
+  turnTo(180);
+  moveForward(15);
+  turnRight(45);
+  moveForward(40);
+  turnTo(90);
+  moveForward(50);
+  turnTo(-35);
+  moveForward(25);
+  moveTo(270, 240);
+  turnTo(180);
+  moveForward(35);
+  turnTo(225);
+  moveForward(50);
+  turnTo(90);
+  moveForward(65);
+  turnTo(-45);
+  moveForward(45);
+  turnTo(0);
+  moveForward(5);
+  dot(15);
+  moveBackward(25);
+  dot(19);
+}
+function drawclouds() {
+  penUp();
+  moveTo(47, 59);
+  penColor("lightgrey");
+  for (var i = 0; i < 4; i++) {
+    penUp();
+    moveTo(randomNumber(1, 315), randomNumber(1, 82));
+    penDown();
+    dot(10);
+    turnTo(90);
+    moveForward(15);
+    dot(10);
+    moveForward(15);
+    dot(10);
+    moveForward(15);
+    dot(10);
+    turnaround();
+    moveForward(10);
+    turnTo(0);
+    moveForward(10);
+    dot(10);
+    turnTo(-90);
+    moveForward(15);
+    dot(10);
+    moveForward(15);
+    dot(10);
+  }
+}
